@@ -1,0 +1,194 @@
+
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('https://media.istockphoto.com/id/944631208/photo/education-concept-with-book-in-library.jpg?s=612x612&w=0&k=20&c=uJF-uOU5MRR-iwXqJEPAdXeaH-VJ-nqt6TdKUpEdEkk=');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #loginPage,#signupPage {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;    
+      }
+      .header {
+        background-color: #333;
+        margin: 0;
+        text-align: center;
+        color: white;
+      }
+      
+    .logo {
+        width: 50px; /* Adjust the width as per your logo dimensions */
+        height: 50px; /* Adjust the height as per your logo dimensions */
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left;
+      }
+  
+      .company-name {
+        display: inline-block;
+        margin-left: 10px; /* Adjust the margin as needed */
+        font-size: 28px; /* Adjust the font size as needed */
+        font-weight: bold; /* Adjust the font weight as needed */
+        vertical-align: middle;
+      }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    .form-group input[type="text"],
+    .form-group input[type="password"] {
+      width: 100%;
+      padding: 5px;
+    }
+    
+    .form-group button {
+      padding: 5px 20px;
+    }
+    
+    .book-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .book-list li {
+      margin-bottom: 10px;
+    }
+    
+    .book-list li span {
+      font-weight: bold;
+    }
+    
+    .cart {
+      margin-top: 20px;
+    }
+    
+    .cart h2 {
+      margin-bottom: 10px;
+    }
+    
+    .cart-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .cart-list li {
+      margin-bottom: 5px;
+    }
+    
+    .cart-total {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    #searchInput {
+        width: 800px;
+        padding: 10px;
+        font-size: 18px;
+      }
+    #sortSelect{
+        width: 300px;
+        padding: 10px;
+        font-size: 18px; 
+    }
+    .book-item {
+        display: flex;
+        background-color: white;
+        padding: 20px;
+        margin-bottom: 10px;
+      }
+      
+      .book-image {
+        width: 150px;
+        height: auto;
+        margin-right: 20px;
+      }
+      
+      .book-details {
+        flex-grow: 1;
+      }
+      
+      .book-details h2 {
+        margin-top: 0;
+      }
+      
+      .book-details p {
+        margin-bottom: 5px;
+      }
+      
+      .book-details button {
+        margin-top: 10px;
+      }
+      .book-box {
+        display: inline-block;
+        width: 500px; /* Adjust the width of each book container as per your requirements */
+        margin: 20px; /* Adjust the margin between each book container as per your requirements */
+        border: 1px solid white; /* Add a border around each book container */
+        text-align: center; /* Center align the contents within each book container */
+        height: 700px;
+      }
+      
+      #bookList {
+        text-align: center; /* Center align the book containers within the book list */
+        justify-content: space-between;
+      }
+      #homePage{
+        font-family: Arial, sans-serif;
+        background-image: url('https://i.pinimg.com/originals/16/b7/af/16b7afe9f815e640d500e2ee58603223.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+       
+      }
+     .card{
+      padding-left: 50%;
+     
+      
+     }
+     /* Media Queries for Mobile View */
+@media only screen and (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .form-group input[type="text"],
+    .form-group input[type="password"] {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .book-item {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .book-image {
+      margin-bottom: 10px;
+    }
+  
+    .book-box {
+      width: 100%;
+      margin: 10px;
+      height: auto;
+    }
+  
+    #searchInput {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    #sortSelect {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+      
+            
+      
+      
+  

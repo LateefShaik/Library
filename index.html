@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bookstore</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="logo.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <div id="loginPage" style="border: 2px solid black;padding: 5%;color:black">
+      <h1 style="text-align: center; color: black;">Login</h1>
+      <div class="form-group" style="font-size: 25px;">
+        <label for="username">Username:</label>
+        <input type="text" id="username" />
+      </div>
+      <div class="form-group" style="font-size: 25px;">
+        <label for="password">Password:</label>
+        <input type="password" id="password" />
+      </div>
+      <button onclick="login()" style="font-size: 25px; background-color: deepskyblue; width:250px">Login</button>
+      <p style="font-size: 25px;text-align: center;">Don't have an account? <a href="#" onclick="showSignup()">Sign up</a></p>
+    </div>
+    <div id="signupPage" style="display: none;border: 2px solid black;padding: 5%;color: black;">
+      <h1 style="text-align: center; color: black;">Sign up</h1>
+      <div class="form-group" style="font-size: 25px;">
+        <label for="newUsername">Username:</label>
+        <input type="text" id="newUsername" />
+      </div>
+      <div class="form-group" style="font-size: 25px;">
+        <label for="newPassword">Password:</label>
+        <input type="password" id="newPassword" />
+        <p id="passwordValidationMessage" style="font-size: smaller; color: red; display: none;">Password must be at least 7 characters long, contain at least one uppercase letter, one lowercase letter, and one special character.</p>
+      </div>
+      <button onclick="signup()" style="font-size: 25px;background-color: mediumseagreen;width: 250px;">Sign up</button>
+      <p style="font-size: 25px;text-align: center;">Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+    </div>
+    <div id="homePage" style="display: none;">
+      <div class="header">
+        <img src="https://cdn.dribbble.com/users/191651/screenshots/1732774/learntoo.jpg?compress=1&resize=400x300" height="50" width="50" class="logo">
+        <h1 class="company-name" style="color: red;">LearnTOO</h1>
+      </div>
+      <h1 style="color: white;text-align: center;">Hello Beautiful People! Welcome!!!</h1>
+      <input type="text" id="searchInput" placeholder="Search by author or title" />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <select id="sortSelect">
+        <option value="title">Sort by Title</option>
+        <option value="author">Sort by Author</option>
+        <option value="year">Sort by Year</option>
+      </select>
+      <ul class="book-list" id="bookList"></ul>
+      <div class="cart" style="padding-left: 45%;">
+        <button  onclick="Cart()" style="color: black;font-size: 40px;">Cart</button>
+        <ul class="cart-list" id="cartList"></ul>
+        <div class="cart-total" id="cartTotal"></div>
+        <button onclick="checkout()" style="font-size: larger; width:100px;height:50px;margin-right:10px">Checkout</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> 
